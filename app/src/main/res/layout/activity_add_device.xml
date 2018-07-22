@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_order_info"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    <ScrollView
+        android:id="@+id/scroll_about"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/main_card_margin_vertical"
+                android:layout_marginLeft="@dimen/main_card_margin_horizontal"
+                android:layout_marginRight="@dimen/main_card_margin_horizontal"
+                android:layout_marginTop="@dimen/main_card_margin_vertical"
+                card_view:cardCornerRadius="2dp"
+                card_view:cardElevation="2dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:selectableItemBackgroundBorderless"
+                    android:clickable="true">
+
+                    <ImageView
+                        android:id="@+id/img_card_about_1"
+                        android:layout_width="64dp"
+                        android:layout_height="128dp"
+                        android:background="@color/gray_very_light"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/round" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/text_margin"
+                        android:layout_marginStart="@dimen/card_title_margin"
+                        android:layout_toEndOf="@id/img_card_about_1">
+
+                        <TextView
+                            android:id="@+id/order_info_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="物品名称: "
+                            android:textColor="@color/colorAccent"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/order_info_idd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/order_info_name"
+                            android:text="ID: "
+                            android:layout_marginTop="@dimen/text_margin_small"
+                            android:lineSpacingExtra="@dimen/text_margin_small"
+                            android:textStyle="italic"
+                            android:textSize="10dp"/>
+
+                        <TextView
+                            android:id="@+id/order_info_kind"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/order_info_idd"
+                            android:text="类型: "
+                            android:layout_marginTop="@dimen/text_margin_small"
+                            android:lineSpacingExtra="@dimen/text_margin_small"
+                            android:textStyle="italic"
+                            android:textSize="11dp"/>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_about_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                android:layout_marginLeft="@dimen/main_card_margin_horizontal"
+                android:layout_marginRight="@dimen/main_card_margin_horizontal"
+                android:layout_marginTop="@dimen/main_card_margin_vertical"
+                android:background="@color/white"
+                card_view:cardCornerRadius="2dp"
+                card_view:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_card_about_2_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/text_margin"
+                        android:text="填写信息"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:id="@+id/view_card_about_2_line"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/main_background" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?android:selectableItemBackground"
+                        android:paddingHorizontal="10dp"
+                        android:orientation="horizontal">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/input_thing_info"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <AutoCompleteTextView
+                                android:id="@+id/text_add_device_hint"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="备注"
+                                android:imeOptions="actionNext"
+                                android:maxLength="20"
+                                android:maxLines="1"
+                                android:textSize="15dp"
+                                android:singleLine="true" />
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:paddingHorizontal="10dp"
+                        android:orientation="horizontal">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/input_thing_pos"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <AutoCompleteTextView
+                                android:id="@+id/text_add_device_address"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="地址"
+                                android:textSize="15dp"
+                                android:imeOptions="actionNext"
+                                android:maxLength="20"
+                                android:maxLines="1"
+                                android:singleLine="true" />
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_card_about_2_git_hub"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:orientation="horizontal">
+
+
+                        <Button
+                            android:id="@+id/btn_add_device_confirm"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/colorAccent"
+                            android:padding="@dimen/btn_padding"
+                            android:text="确认"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
