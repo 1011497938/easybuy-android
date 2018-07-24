@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.eajy.materialdesigndemo.activity.ShareViewActivity">
+    tools:context="com.eajy.materialdesigndemo.com.eajy.easybuy.activity.ShareViewActivity">
 
     <TextView
         android:id="@+id/tv_share_view_tip"

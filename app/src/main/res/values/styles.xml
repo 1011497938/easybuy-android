@@ -17,10 +17,6 @@
     </style>
 
     <!-- ToolBar菜单样式 -->
-    <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
-        <item name="actionMenuTextColor">@color/black</item> <!--  敲定颜色-->
-        <item name="android:textSize">18sp</item> <!--  搞掂字体大小-->
-    </style>
 
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>

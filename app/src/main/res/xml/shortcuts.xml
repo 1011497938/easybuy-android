@@ -7,7 +7,7 @@
         android:shortcutShortLabel="@string/shortcut_label_recycler">
         <intent
             android:action="android.intent.action.VIEW"
-            android:targetClass="com.eajy.materialdesigndemo.activity.RecyclerViewActivity"
+            android:targetClass="com.eajy.easybuy.activity.RecyclerViewActivity"
             android:targetPackage="com.eajy.materialdesigndemo" />
     </shortcut>
 
@@ -17,7 +17,7 @@
         android:shortcutShortLabel="@string/shortcut_label_scrolling">
         <intent
             android:action="android.intent.action.VIEW"
-            android:targetClass="com.eajy.materialdesigndemo.activity.ScrollingActivity"
+            android:targetClass="com.eajy.easybuy.activity.ScrollingActivity"
             android:targetPackage="com.eajy.materialdesigndemo" />
     </shortcut>
 
@@ -27,7 +27,7 @@
         android:shortcutShortLabel="@string/shortcut_label_about">
         <intent
             android:action="android.intent.action.VIEW"
-            android:targetClass="com.eajy.materialdesigndemo.activity.AboutActivity"
+            android:targetClass="com.eajy.easybuy.activity.AboutActivity"
             android:targetPackage="com.eajy.materialdesigndemo" />
     </shortcut>
 

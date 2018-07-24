@@ -9,7 +9,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.eajy.materialdesigndemo.activity.LoginActivity">
+    tools:context="com.eajy.materialdesigndemo.com.eajy.easybuy.activity.LoginActivity">
 
     <!-- Login progress -->
     <ProgressBar
@@ -27,7 +27,6 @@
         android:fillViewport="false">
 
         <LinearLayout
-            android:id="@+id/email_login_form"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">

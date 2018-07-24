@@ -13,8 +13,6 @@
     <dimen name="zero_horizontal_margin">48dp</dimen>
     <dimen name="zero_horizontal_margin_big_activity">48dp</dimen>
 
-    <dimen name="big_activity_margin_vertical">96dp</dimen>
-    <dimen name="big_activity_margin_horizontal">72dp</dimen>
     <dimen name="big_activity_fab_margin">8dp</dimen>
 
 </resources>

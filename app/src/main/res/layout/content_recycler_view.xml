@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.eajy.materialdesigndemo.activity.RecyclerViewActivity"
+    tools:context="com.eajy.materialdesigndemo.com.eajy.easybuy.activity.RecyclerViewActivity"
     tools:showIn="@layout/activity_recycler_view">
     <!--刷新操作，以及下拉内容-->
 
