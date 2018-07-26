@@ -174,6 +174,7 @@ public class StartBuyActivity extends AppCompatActivity {
                         Looper.prepare();
                         Toast.makeText(context,"购买成功， 共花费" + String.valueOf((float) totalNum) + "元",Toast.LENGTH_SHORT).show();
                         Looper.loop();
+//                        context.finish();
                         handler.post(new Runnable() {
                             @Override
                             public void run() {

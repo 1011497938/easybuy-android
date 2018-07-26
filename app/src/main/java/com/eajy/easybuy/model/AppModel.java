@@ -12,12 +12,13 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class AppModel{
-    public final static String BASE_URL = "http://10.180.93.88:8000";
+    public final static String BASE_URL = "http://10.180.85.132:8000";
     public static ACache mCache;
 
     public static void init(Context mainActivity){
         mCache = ACache.get(mainActivity);
 //        login("神奇小螺号", "18867100389", "6666665", "6666664", 666663, "6666662");
+//        http://10.180.94.45:8000/manage_d/?token=194582ad894aeca781c864a5be456081&did=01234568&state=10&address=%E7%8E%89%E6%B3%89&hint=%E5%8E%A8%E6%88%BF
     }
 
     public static synchronized boolean isLogin(){

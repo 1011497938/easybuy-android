@@ -148,7 +148,7 @@ public class AddDeviceActivity extends BaseNfcActivity implements View.OnClickLi
 
                 thingsName = info[0];
                 thingsId = info[1];
-                thingsType = info[1];
+                thingsType = info[2];
             } catch (Exception e) {
             }
 

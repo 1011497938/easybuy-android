@@ -277,6 +277,7 @@ public class ThingsFragment extends Fragment implements View.OnClickListener, Vi
 //                        Looper.prepare();
 //                        Toast.makeText(getActivity(),"网络连接错误",Toast.LENGTH_SHORT).show();
 //                        Looper.loop();
+//                        String s = getString(R.string.tab_title_main_1);
                         response = AppModel.mCache.getAsString(AppModel.getUserName() + "_devices");
                     }
                     try {

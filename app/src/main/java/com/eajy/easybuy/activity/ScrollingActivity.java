@@ -54,7 +54,13 @@ public class ScrollingActivity extends AppCompatActivity {
         });
 
         ImageView image_scrolling_top = findViewById(R.id.image_scrolling_top);
-        Glide.with(this).load(R.drawable.material_design_3).apply(new RequestOptions().fitCenter()).into(image_scrolling_top);
+        switch (name){
+            case "水": Glide.with(this).load(R.drawable.shui).apply(new RequestOptions().fitCenter()).into(image_scrolling_top); break;
+            case "盐": Glide.with(this).load(R.drawable.yan).apply(new RequestOptions().fitCenter()).into(image_scrolling_top); break;
+            case "沐浴露": Glide.with(this).load(R.drawable.muyulu).apply(new RequestOptions().fitCenter()).into(image_scrolling_top); break;
+            default: Glide.with(this).load(R.drawable.material_design_2).apply(new RequestOptions().fitCenter()).into(image_scrolling_top); break;
+        }
+//        Glide.with(this).load(R.drawable.material_design_3).apply(new RequestOptions().fitCenter()).into(image_scrolling_top);
 
 //        findViewById(R.id)
     }

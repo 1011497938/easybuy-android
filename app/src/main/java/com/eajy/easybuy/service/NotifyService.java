@@ -62,9 +62,9 @@ public class NotifyService extends Service {
                     //获得所有设备信息
                     try {
                         //验证登陆
-                        Log.d("WTF", "token = " + token);
+//                        Log.d("WTF", "token = " + token);
                         response = NetUtils.get(AppModel.BASE_URL + "/search_d/?token=" + token);
-                        Log.d("WTF", "后台" + response);
+//                        Log.d("WTF", "后台" + response);
                         jsonArray = new JSONArray(response);
                         for (int i = 0; i < jsonArray.length(); i++) {
                             JSONObject jsonObject = (JSONObject) jsonArray.get(i);
